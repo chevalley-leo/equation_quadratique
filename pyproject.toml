@@ -5,19 +5,17 @@ description = ""
 authors = ["Léo Chevalley <leo.chevalley@heig-vd.ch>"]
 readme = "README.md"
 
-# Dependencies pour le projet
 [tool.poetry.dependencies]
 python = "^3.12"
 
-# Dépendances de développement
 [tool.poetry.dev-dependencies]
 pytest = "^8.3.5"
 
-# Définir les packages à inclure dans le projet (ici, "quadratic" qui est un dossier)
 [tool.poetry.packages]
+# On déclare le package sous forme de tableau
+[[tool.poetry.packages]]
 include = "quadratic"
 
-# Configuration du système de construction
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
