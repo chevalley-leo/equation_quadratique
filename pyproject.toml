@@ -16,4 +16,5 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.packages]
-include = "quadratic" 
+[[tool.poetry.packages]]
+include = "quadratic"
